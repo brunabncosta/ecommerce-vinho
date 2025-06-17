@@ -2,15 +2,15 @@ package br.com.ecommerce.controller;
 
 import br.com.ecommerce.service.RecomendacaoProdutoService;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Map;
 import java.util.Optional;
 
 
-@Controller
+@RestController
 public class RecomendacaoController {
 
     private final RecomendacaoProdutoService recomendacaoProdutoService;
